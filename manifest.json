@@ -1,0 +1,13 @@
+{
+  "name": "MessageThen",
+  "version": "0.1",
+  "description": "Boomerang for Facebook Messenger",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://*.facebook.com/*"],
+    "js": ["scripts/zepto.js", "scripts/content.js"]
+  }],
+  "permissions": [
+    "tabs"
+  ]
+}
