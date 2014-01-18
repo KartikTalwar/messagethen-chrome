@@ -5,7 +5,8 @@
   "manifest_version": 2,
   "content_scripts": [{
     "matches": ["https://*.facebook.com/*"],
-    "js": ["scripts/zepto.js", "scripts/content.js"]
+    "js": ["scripts/zepto.js", "scripts/content.js"],
+    "css": ["styles/style.css"]
   }],
   "permissions": [
     "tabs"
