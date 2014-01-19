@@ -76,7 +76,7 @@ $(function() {
             setTimeout(function() {
               $emoticons.find('._1ri').replaceWith(sendlater);
               $('.sendlater').on('click', sl);
-            }, 1800);
+            }, 1700);
 
           });
         });
