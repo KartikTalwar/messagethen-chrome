@@ -7,6 +7,7 @@
     "matches": ["https://*.facebook.com/*"],
     "js": [
       "scripts/zepto.js",
+      "scripts/moment.js",
       "scripts/intimidatetime.js",
       "scripts/content.js"],
     "css": [

@@ -3,6 +3,45 @@
   float: right !important;
 }
 
+/*
 #when {
   vertical-align: bottom;
+}
+*/
+
+.calendar {
+  position: absolute;
+  top: -58px;
+  right: 21px;;
+  height: auto;
+  z-index: 999;
+  -webkit-user-select: none;
+  /*min-height: 200px;*/
+  /*min-width: 250px;*/
+  list-style: none;
+  padding: 7px 10px 7px 7px;
+
+  background-color: #ffffff;
+  border: solid 1px #e4e4e4;
+  border-bottom: none;
+  /*border-radius: 2px;*/
+  -webkit-box-shadow: 0 0 8px #dddddd;
+  -moz-box-shadow: 0 0 8px #dddddd;
+  -ms-box-shadow: 0 0 8px #dddddd;
+  -o-box-shadow: 0 0 8px #dddddd;
+  box-shadow: 0 0 8px #dddddd;
+}
+
+#when {
+  color: #333;
+}
+
+.green {
+}
+
+.success {
+}
+
+.calendar input {
+  width: 100%;
 }
