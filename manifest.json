@@ -1,7 +1,10 @@
 {
   "name": "MessageThen",
   "version": "0.1",
-  "description": "Boomerang for Facebook Messenger",
+  "description": "Boomerang for Facebook Messenger. http://messagethen.com",
+  "icons": {
+    "256": "messagethen.png"
+  },
   "manifest_version": 2,
   "content_scripts": [{
     "matches": ["https://*.facebook.com/*"],
