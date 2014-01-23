@@ -8,11 +8,8 @@
     "js": [
       "scripts/zepto.js",
       "scripts/moment.js",
-      "scripts/intimidatetime.js",
       "scripts/content.js"],
-    "css": [
-      "styles/intimidatetime.css",
-      "styles/style.css"]
+    "css": ["styles/style.css"]
   }],
   "permissions": [
     "tabs", "http://messagethen.com/"

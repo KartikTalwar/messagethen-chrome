@@ -53,7 +53,6 @@ $(function() {
       $emoticons.find('._1ri').replaceWith(messagethen);
 
       $('#messagethen').on('click', function(e) {
-        $('#messagethen').addClass('green');
         $('#messagethen').val('Sending...');
 
         var n = window.location.toString().lastIndexOf('/');
