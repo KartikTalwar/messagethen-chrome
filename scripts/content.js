@@ -96,4 +96,31 @@ $(function() {
   };
 
   $('.sendlater').on('click', sl);
+
+  var sendlatertab = '<div class="sendlatertab uiToggle emoticonsPanel">' +
+                        '<a class="_5r8g" tabindex="0" rel="toggle" role="button">' +
+                            '<i class="emoteTogglerImg img sp_c29spt sx_abf388"></i></a></div>';
+
+  var $target = $('#ChatTabsPagelet .fbNubGroup.clearfix .fbNubGroup.clearfix');
+  var $tabs = $target.children();
+  $tabs.each(function(i, tab) {
+    var $icons = $(tab).find('._552n');
+    $icons.prepend(sendlatertab);
+  });
+  var observer = new WebKitMutationObserver(function(mutations) {
+    // only need to add a button when a tab is created
+    // ignore the case that a tab was destroyed
+    if ($target.children().length > $tabs.length) {
+      var $icons = $target.children(':first').find('._552n');
+      $icons.prepend(sendlatertab);
+    }
+    $tabs = $target.children(); // reset tabs
+  });
+
+  observer.observe($target[0], {childList: true, attributes: true});
+
+  // attach event handler
+  $target.delegate('.sendlatertab', 'click', function() {
+    console.log("clicked this bitch");
+  });
 });

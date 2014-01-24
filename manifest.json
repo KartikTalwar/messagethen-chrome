@@ -9,7 +9,7 @@
   "content_scripts": [{
     "matches": ["https://*.facebook.com/*"],
     "js": [
-      "scripts/zepto.js",
+      "scripts/jquery.js",
       "scripts/moment.js",
       "scripts/content.js"],
     "css": ["styles/style.css"]
