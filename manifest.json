@@ -7,7 +7,7 @@
   },
   "manifest_version": 2,
   "content_scripts": [{
-    "matches": ["https://*.facebook.com/*"],
+    "matches": ["*://www.facebook.com/*"],
     "js": [
       "scripts/jquery.js",
       "scripts/moment.js",
