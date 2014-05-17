@@ -10,6 +10,7 @@
     "matches": ["*://www.facebook.com/*"],
     "js": [
       "scripts/jquery.js",
+      "scripts/store.js",
       "scripts/moment.js",
       "scripts/content.js"],
     "css": ["styles/style.css"]
