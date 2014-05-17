@@ -57,17 +57,21 @@ $(document).ready(function() {
     $('#messagethen').on('click', function(e) {
       $('#messagethen').val('Sending...');
 
-      var n = window.location.toString().lastIndexOf('/');
-      var url = "https://graph.facebook.com/" + window.location.toString().substring(n + 1);
+      var id = window.location.toString().match(/facebook\.com\/messages\/(.*)/)[1];
+      var url = "https://graph.facebook.com/" + id + "?fields=name;
       // get fb id of recipient
       $.getJSON(url, function(data) {
         var name = data.name;
         var message = $textbox.val();
         var accessToken = store("accessToken");
         var when = "" + moment($('#date').val() + " " + $('#time').val()).unix();
-        console.log(when);
 
-        var data = {"name": name, "message": message, "token": accessToken, "when": when};
+        var data = {
+          name: name
+          message: message,
+          token: accessToken,
+          when: when
+        };
 
         $.post('http://messagethen.com/post', data, function(r) {
           $textbox.val('');
